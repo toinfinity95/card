@@ -9,36 +9,35 @@
 <body>
   <main class="card-wrap">
     <section class="business-card" id="businessCard">
-      <div class="avatar" aria-label="애니풍 캐릭터 얼굴">
-        <div class="face">
-          <span class="hair-back"></span>
-          <span class="hair-front"></span>
-          <span class="brow brow-left"></span>
-          <span class="brow brow-right"></span>
-          <span class="eye eye-left"><i class="shine"></i></span>
-          <span class="eye eye-right"><i class="shine"></i></span>
-          <span class="blush blush-left"></span>
-          <span class="blush blush-right"></span>
-          <span class="mouth"></span>
-        </div>
+      <div class="avatar" id="avatarTrigger" aria-label="프로필 이미지 (클릭 시 음성 재생)">
+        <img class="avatar-img" src="assets/profile.png" alt="프로필 캐릭터" />
       </div>
 
       <div class="info">
-        <p class="role-badge">AI ENGINEER</p>
-        <h1 class="name">최지요</h1>
-        <p class="job">지지옥션 AI 엔지니어</p>
-        <p class="intro">데이터와 모델로 더 똑똑한 부동산 서비스를 만듭니다.</p>
+        <p class="role-badge">DATA SCIENTIST</p>
+        <h1 class="name">1등분석가</h1>
+        <p class="job">데이터 사이언티스트</p>
+        <p class="intro">현실 문제를 데이터로 풀어내는 실전형 분석가입니다.</p>
+        <p class="voice-hint">이미지를 누르면 음성 미리듣기가 재생됩니다.</p>
 
         <div class="contacts">
-          <a href="mailto:cjy@ggi.co.kr">cjy@ggi.co.kr</a>
-          <a href="tel:01031395416">010-3139-5416</a>
-          <a href="https://www.instagram.com/jeat_yaker" target="_blank" rel="noopener noreferrer">@jeat_yaker</a>
+          <a href="mailto:jiyo9515@gmail.com">jiyo9515@gmail.com</a>
+          <a href="tel:01000000000">010-0000-0000</a>
+          <a href="https://www.instagram.com/datawizard.lab" target="_blank" rel="noopener noreferrer">@datawizard.lab</a>
         </div>
 
         <button class="action-btn" id="copyBtn" type="button">연락처 복사하기</button>
+
+        <div class="qr-section">
+          <p class="qr-title">웹 명함 공유 QR</p>
+          <img id="qrImage" class="qr-image" alt="웹 명함 QR 코드" />
+          <a id="cardUrl" class="card-url" target="_blank" rel="noopener noreferrer"></a>
+        </div>
       </div>
     </section>
   </main>
+
+  <audio id="voicePreview" preload="auto" src="assets/voice-preview.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
