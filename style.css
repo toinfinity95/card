@@ -105,6 +105,8 @@ body {
   max-width: 24ch;
   line-height: 1.5;
   text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .voice-hint {
